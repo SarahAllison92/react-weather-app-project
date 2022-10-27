@@ -1,0 +1,10 @@
+.Weather {
+  background-color: #fcf6ea;
+  border-radius: 8px;
+}
+
+.current-conditions {
+  background-color: rgb(128, 173, 165, 0.4);
+  border-radius: 15px;
+  text-decoration: none;
+}

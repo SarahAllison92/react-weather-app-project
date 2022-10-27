@@ -14,7 +14,8 @@ export default function App() {
             rel="noreferrer"
           >
             Open-source code
-          </a>
+          </a>{" "}
+          By Sarah Allison.
         </footer>
       </div>
     </div>
