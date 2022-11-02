@@ -2,23 +2,22 @@ import React, { useState } from "react";
 import "./Weather.css";
 import earthImage from "./earth.png";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [ready, setReady] = useState(false);
 
   function handleResponse(response) {
     setWeatherData({
       ready: true,
       city: response.data.city,
-      date: "Tues 31st Oct, 7.00",
+      date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
       currentConditions: response.data.condition.description,
       icon: response.data.condition.icon_url,
     });
-    setReady(true);
   }
 
   if (weatherData.ready) {
@@ -30,6 +29,7 @@ export default function Weather() {
             placeholder="Enter a City..."
             className="search-bar"
           />
+
           <input type="submit" value="Search" className="button" />
         </form>
         <div className="row">
@@ -40,7 +40,10 @@ export default function Weather() {
               <h2 className="text-capitalize">
                 {weatherData.currentConditions}
               </h2>
-              <div className="date">Last updated: {weatherData.date}</div>
+              <div className="date">
+                Last updated:
+                <FormattedDate date={weatherData.date} />
+              </div>
             </div>
             <img
               src={weatherData.icon}
@@ -78,7 +81,7 @@ export default function Weather() {
     );
   } else {
     const apiKey = "b6fdbb544a5ad3ta9845e350ff6o0437";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Glasgow&key=${apiKey}`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading....";
