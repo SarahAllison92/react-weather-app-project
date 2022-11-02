@@ -1,10 +1,86 @@
+.container {
+  padding: 30px;
+  position: relative;
+  max-width: 800px;
+}
+
 .Weather {
   background-color: #fcf6ea;
-  border-radius: 8px;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+
+.Weather h1 {
+  position: relative;
+  color: #415643;
+  text-shadow: 1px 1px 2px #000;
+  font-size: 80px;
+  text-align: center;
+  line-height: 0.5;
+  padding-top: 30px;
+  padding-left: 80px;
+}
+
+.Weather h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #7b9978;
+  text-shadow: 1px 1px 1px #000;
+  padding-left: 80px;
+}
+
+.Weather .current-weather-icon {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.Weather .search-engine {
+  padding: 20px;
+  margin-right: 40px;
+}
+
+.Weather .search-bar {
+  border-radius: 12px;
 }
 
 .current-conditions {
   background-color: rgb(128, 173, 165, 0.4);
   border-radius: 15px;
   text-decoration: none;
+  text-align: center;
+  list-style: none;
+  padding: 40px 0px;
+  margin: 20px 50px;
+  line-height: 0.8;
+}
+
+.current-temp {
+  font-size: 60px;
+}
+
+.current-humidity {
+  font-size: 25px;
+}
+
+.current-wind-speed {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.earth-image {
+  width: 350px;
+  position: absolute;
+  top: -35px;
+  left: -50px;
+}
+
+.search-engine {
+  text-align: right;
+}
+.weekly-forecast {
+  background-color: rgb(128, 173, 165, 0.4);
+  border-radius: 15px;
+  padding: 10px 30px 80px 30px;
+  margin: 20px 50px;
 }

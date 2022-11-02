@@ -1,1 +1,11 @@
+footer {
+  text-align: center;
+}
 
+.App {
+  font-family: "Lato", sans-serif;
+}
+
+.git-link {
+  color: #7b9978;
+}
