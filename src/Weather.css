@@ -16,7 +16,7 @@
   text-shadow: 1px 1px 2px #000;
   font-size: 80px;
   text-align: center;
-  line-height: 0.5;
+  line-height: 0.6;
   padding-top: 30px;
   padding-left: 80px;
 }
@@ -27,12 +27,22 @@
   color: #7b9978;
   text-shadow: 1px 1px 1px #000;
   padding-left: 80px;
+  font-style: italic;
+}
+
+.Weather .date {
+  text-align: center;
+  font-size: 15px;
+  padding-left: 90px;
+  font-style: italic;
+  color: #7b9978;
 }
 
 .Weather .current-weather-icon {
   display: block;
-  margin: 0 auto;
+  margin: 0 190px;
   padding-top: 10px;
+  
 }
 
 .Weather .search-engine {
@@ -61,6 +71,7 @@
 
 .current-humidity {
   font-size: 25px;
+  font-style: italic;
 }
 
 .current-wind-speed {
