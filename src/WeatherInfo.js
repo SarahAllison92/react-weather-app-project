@@ -1,13 +1,12 @@
 import React from "react";
-import earthImage from "./earth.png";
+
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
     <div className="weather-info">
-      <div className="row">
-        <img src={earthImage} alt="earth" className="earth-image"></img>
+      <div className="row">      
         <div className="col">
           <div className="city">
             <h1>{props.data.city}</h1>
