@@ -4,7 +4,7 @@
   max-width: 850px;
   background-color: #fcf6ea;
   border-radius: 15px;
-  margin-top: 30px;
+  margin-top: 40px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -47,12 +47,10 @@
   font-style: normal;
 }
 
-.Weather .current-weather-icon {
-  display: block;
-  margin: 0 auto;
+.Weather canvas {
   position: absolute;
-  top: 160px;
-  left: 330px;
+  top: 210px;
+  left: 310px;
 }
 
 .Weather .search-engine {
