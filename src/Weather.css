@@ -26,6 +26,9 @@
 .Weather .city {
   border-radius: 15px;
   margin-top: 20px;
+  background: url(./earth.png) center center no-repeat;
+  background-size: 300px;
+  background-position: -35% 72%;
 }
 .Weather h2 {
   font-size: 30px;
