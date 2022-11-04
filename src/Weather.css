@@ -1,7 +1,190 @@
+/*Responsive*/
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 400px;
+  }
+  .Weather .search-engine {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .Weather .city {
+    border-radius: 15px;
+    margin-top: 20px;
+    background: url(./earth.png) no-repeat;
+    background-position: -65% 126%;
+    background-size: 300px;
+  }
+
+  .Weather h1 {
+    font-size: 75px;
+    padding-top: 20px;
+  }
+
+  .Weather canvas {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  .Weather .current-conditions {
+    padding: 20px;
+
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .Weather .current-temp .current-humidity .current-wind-speed {
+    align-items: baseline;
+  }
+
+  .Weather .current-temp {
+    color: #fff;
+    font-size: 65px;
+    order: 2;
+    padding: 0 5px;
+  }
+
+  .Weather .current-humidity {
+    color: #415643;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    order: 1;
+  }
+
+  .Weather .current-wind-speed {
+    color: #415643;
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px 0;
+    order: 3;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .Weather .search-engine {
+    padding: 20px;
+    text-align: right;
+    margin-right: 40px;
+  }
+  .Weather .city {
+    border-radius: 15px;
+    margin-top: 30px;
+    background: url(./earth.png) no-repeat;
+    background-position: -60% 72%;
+    background-size: 300px;
+  }
+
+  .Weather h1 {
+    font-size: 60px;
+    padding-top: 50px;
+    margin-left: 50px;
+  }
+
+  .Weather h2 {
+    margin-left: 50px;
+  }
+
+  .Weather .date {
+    margin-left: 50px;
+  }
+
+  .Weather .current-conditions {
+    color: #fff;
+    margin: 20px 55px 30px 40px;
+    padding: 40px;
+  }
+
+  .Weather .current-temp {
+    font-size: 85px;
+  }
+
+  .Weather .current-humidity {
+    font-size: 25px;
+  }
+
+  .Weather .current-wind-speed {
+    font-size: 20px;
+  }
+
+  .Weather canvas {
+    position: absolute;
+    top: 120px;
+    left: 330px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 850px;
+  }
+
+  .Weather .search-engine {
+    padding: 20px 20px 0 ;
+    text-align: right;
+    margin-right: 35px;
+  }
+
+  .Weather .city {
+    border-radius: 15px;
+    margin-top: 20px;
+    background: url(./earth.png) no-repeat;
+    background-position: -45% 65%;
+    background-size: 300px;
+    padding-top: 5px;
+  }
+
+  .Weather h1 {
+    font-size: 80px;
+    padding-top: 30px;
+    margin-left: 50px;
+  }
+
+  .Weather h2 {
+    margin-left: 50px;
+  }
+
+  .Weather .date {
+    margin-left: 50px;
+  }
+
+  .Weather .current-conditions {
+    color: #fff;
+    padding:50px;
+    margin: 30px 50px 30px;
+  }
+
+  .Weather .current-temp {
+    font-size: 100px;
+  }
+
+  .Weather .current-humidity {
+    font-size: 35px;
+  }
+
+  .Weather .current-wind-speed {
+    font-size: 30px;
+  }
+
+  .Weather canvas {
+    position: absolute;
+    top: 125px;
+    left: 400px;
+  }
+}
+
+/*Responsive ends*/
+
 .container {
   padding: 0px;
   position: relative;
-  max-width: 850px;
   background-color: #fcf6ea;
   border-radius: 15px;
   margin-top: 40px;
@@ -9,27 +192,12 @@
 }
 
 .Weather h1 {
-  position: relative;
   color: #bbccb9;
   text-shadow: 1px 1px 2px #000;
-  font-size: 80px;
   text-align: center;
   line-height: 0.8;
-  padding-top: 30px;
-  padding-right: 40px;
 }
 
-.Weather .col {
-  padding: 0;
-}
-
-.Weather .city {
-  border-radius: 15px;
-  margin-top: 20px;
-  background: url(./earth.png) center center no-repeat;
-  background-size: 300px;
-  background-position: -35% 72%;
-}
 .Weather h2 {
   font-size: 30px;
   text-align: center;
@@ -49,18 +217,6 @@
   font-size: 15px;
   color: #415643;
   font-style: normal;
-}
-
-.Weather canvas {
-  position: absolute;
-  top: 225px;
-  left: 300px;
-}
-
-.Weather .search-engine {
-  padding: 20px;
-  margin-right: 32px;
-  text-align: right;
 }
 
 .Weather .search-bar {
@@ -84,29 +240,21 @@
 
 .Weather .current-conditions {
   background-color: rgb(128, 173, 165, 0.4);
-  color: #fff;
   border-radius: 15px;
   text-decoration: none;
   text-align: center;
   list-style: none;
-  padding: 30px 10px;
-  margin: 20px 60px;
+
   line-height: 0.8;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.Weather .current-temp {
-  font-size: 60px;
-}
-
 .Weather .current-humidity {
   color: #415643;
-  font-size: 25px;
   font-style: italic;
 }
 
 .Weather .current-wind-speed {
-  font-size: 20px;
   font-weight: bold;
 }
 

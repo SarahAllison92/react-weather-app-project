@@ -5,7 +5,7 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherInfo(props) {
   return (
     <div className="weather-info">
-      <div className="row">      
+      <div className="row">
         <div className="col">
           <div className="city">
             <h1>{props.data.city}</h1>
@@ -35,15 +35,7 @@ export default function WeatherInfo(props) {
         </div>
       </div>
 
-      <div className="weekly-forecast">
-        <div className="row">
-          <div className="col">Monday</div>
-          <div className="col">Tuesday</div>
-          <div className="col">Wednesday</div>
-          <div className="col">Thursday</div>
-          <div className="col">Friday</div>
-        </div>
-      </div>
+    
     </div>
   );
 }
