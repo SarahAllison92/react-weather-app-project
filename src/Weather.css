@@ -29,38 +29,45 @@
   }
 
   .Weather .current-conditions {
-    padding: 20px;
-
+    padding: 10px;
     margin: 10px 20px;
     display: flex;
-    flex-wrap: nowrap;
   }
 
-  .Weather .current-temp .current-humidity .current-wind-speed {
-    align-items: baseline;
+  .unit {
+    font-size: 60px;
+  }
+  .active-unit {
+    font-size: 50px;
+  }
+
+  .unactive-unit {
+    text-decoration: none;
+    color: #415643;
   }
 
   .Weather .current-temp {
     color: #fff;
-    font-size: 65px;
     order: 2;
-    padding: 0 5px;
+    padding: 5px;
   }
 
   .Weather .current-humidity {
     color: #415643;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px;
+    margin-top: 10px;
     order: 1;
   }
 
   .Weather .current-wind-speed {
     color: #415643;
     font-style: italic;
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px 0;
     order: 3;
+    margin: 10px 0 0 10px;
   }
 }
 
@@ -78,13 +85,13 @@
     border-radius: 15px;
     margin-top: 30px;
     background: url(./earth.png) no-repeat;
-    background-position: -60% 72%;
+    background-position: -60% 52%;
     background-size: 300px;
   }
 
   .Weather h1 {
     font-size: 60px;
-    padding-top: 50px;
+    padding-top: 15px;
     margin-left: 50px;
   }
 
@@ -102,8 +109,17 @@
     padding: 40px;
   }
 
-  .Weather .current-temp {
-    font-size: 85px;
+  .unit {
+    font-size: 75px;
+  }
+  .active-unit {
+    font-size: 70px;
+  }
+
+  .unactive-unit {
+    font-size: 25px;
+    text-decoration: none;
+    color: #415643;
   }
 
   .Weather .current-humidity {
@@ -127,7 +143,7 @@
   }
 
   .Weather .search-engine {
-    padding: 20px 20px 0 ;
+    padding: 20px 20px 0;
     text-align: right;
     margin-right: 35px;
   }
@@ -157,12 +173,25 @@
 
   .Weather .current-conditions {
     color: #fff;
-    padding:50px;
+    padding: 50px;
     margin: 30px 50px 30px;
   }
 
+   .unit {
+    font-size: 85px;
+  }
+  .active-unit {
+    font-size: 70px;
+  }
+
+  .unactive-unit {
+    font-size: 25px;
+    text-decoration: none;
+    color: #415643;
+  }
+
   .Weather .current-temp {
-    font-size: 100px;
+    font-size: 80px;
   }
 
   .Weather .current-humidity {
