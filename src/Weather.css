@@ -5,7 +5,6 @@
     max-width: 400px;
   }
   .Weather .search-engine {
-    text-align: center;
     padding-top: 20px;
   }
 
@@ -78,7 +77,6 @@
 
   .Weather .search-engine {
     padding: 20px;
-    text-align: center;
   }
 
   .Weather .search-bar {
@@ -144,12 +142,6 @@
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 850px;
-  }
-
-  .Weather .search-engine {
-    padding: 20px 20px 0;
-    text-align: right;
-    margin-right: 35px;
   }
 
   .Weather .city {
@@ -222,6 +214,10 @@
   border-radius: 15px;
   margin-top: 40px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Weather .search-engine {
+  text-align: center;
 }
 
 .Weather h1 {
