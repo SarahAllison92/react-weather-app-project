@@ -78,9 +78,13 @@
 
   .Weather .search-engine {
     padding: 20px;
-    text-align: right;
-    margin-right: 40px;
+    text-align: center;
   }
+
+  .Weather .search-bar {
+    padding: 0 80px;
+  }
+
   .Weather .city {
     border-radius: 15px;
     margin-top: 30px;
@@ -177,7 +181,7 @@
     margin: 30px 50px 30px;
   }
 
-   .unit {
+  .unit {
     font-size: 85px;
   }
   .active-unit {
