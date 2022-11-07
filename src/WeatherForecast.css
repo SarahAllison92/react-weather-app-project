@@ -1,6 +1,6 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .weather-forecast-day {
-    padding: 15px 30px;
+    padding: 15px 25px;
   }
 }
 
