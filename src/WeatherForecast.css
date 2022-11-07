@@ -1,0 +1,28 @@
+.weather-forecast {
+  text-align: center;
+  background-color: rgb(128, 173, 165, 0.4);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+.weather-forecast-day {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.weather-forecast-temp {
+  padding: 10px 0;
+}
+
+.weather-forecast-temp-max {
+  font-weight: bold;
+}
+
+.weather-forecast-temp-min {
+  font-style: italic;
+  opacity: 0.5;
+  color: #415643;
+}

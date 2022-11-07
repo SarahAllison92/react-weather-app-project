@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 400px;
+    max-width: 450px;
   }
   .Weather .search-engine {
     padding-top: 20px;
@@ -21,28 +21,19 @@
     padding-top: 20px;
   }
 
-  .Weather canvas {
-    display: block;
-    margin: 0 auto;
+  .Weather .current-weather-icon {
+    text-align: center;
     padding-top: 10px;
   }
 
   .Weather .current-conditions {
     padding: 10px;
-    margin: 10px 20px;
+    margin: 20px 20px 30px 20px;
     display: flex;
   }
 
-  .unit {
+  .current-temp {
     font-size: 60px;
-  }
-  .active-unit {
-    font-size: 50px;
-  }
-
-  .unactive-unit {
-    text-decoration: none;
-    color: #415643;
   }
 
   .Weather .current-temp {
@@ -111,17 +102,8 @@
     padding: 40px;
   }
 
-  .unit {
+  .current-temp {
     font-size: 75px;
-  }
-  .active-unit {
-    font-size: 70px;
-  }
-
-  .unactive-unit {
-    font-size: 25px;
-    text-decoration: none;
-    color: #415643;
   }
 
   .Weather .current-humidity {
@@ -132,7 +114,7 @@
     font-size: 20px;
   }
 
-  .Weather canvas {
+  .Weather .current-weather-icon {
     position: absolute;
     top: 120px;
     left: 330px;
@@ -173,17 +155,8 @@
     margin: 30px 50px 30px;
   }
 
-  .unit {
+  .current-temp {
     font-size: 85px;
-  }
-  .active-unit {
-    font-size: 70px;
-  }
-
-  .unactive-unit {
-    font-size: 25px;
-    text-decoration: none;
-    color: #415643;
   }
 
   .Weather .current-temp {
@@ -198,7 +171,7 @@
     font-size: 30px;
   }
 
-  .Weather canvas {
+  .Weather .current-weather-icon {
     position: absolute;
     top: 125px;
     left: 400px;
@@ -273,7 +246,6 @@
   text-decoration: none;
   text-align: center;
   list-style: none;
-
   line-height: 0.8;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
