@@ -1,3 +1,9 @@
+@media only screen and (max-width: 768px) {
+  .weather-forecast-day {
+    padding: 15px 30px;
+  }
+}
+
 .weather-forecast {
   text-align: center;
   background-color: rgb(128, 173, 165, 0.4);
